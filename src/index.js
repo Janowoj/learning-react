@@ -8,12 +8,7 @@ const el = document.getElementById("root");
 const root = ReactDOM.createRoot(el);
 // 4) Create a React component
 function App() {
-    let message = "Bye there!";
-    if (Math.random() > 0.5) {
-        message = "Hello there!";
-    }
-
-    return <div>{message}</div>;
+    return <div>{new Date().toLocaleDateString()}</div>;
 }
 //5) Show the react component on the screen
 root.render(<App />);
